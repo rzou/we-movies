@@ -1,0 +1,13 @@
+{% set voteAverage = (voteAverage / 2)|round(1, 'ceil') %}
+{% set colorStarClass = 'rating-color' %}
+<div class="rating-container">
+    {% for i in 1..5 %}
+        {% set starClass = '' %}
+        {% if voteAverage >= i %}
+            {% set starClass = ' ' ~ colorStarClass %}
+        {% elseif voteAverage >= (i - 0.6) %}
+            {% set starClass = '-half-stroke ' ~ colorStarClass %}
+        {% endif %}
+        <i class="fa fa-star{{ starClass }}"></i>
+    {% endfor %}
+</div>

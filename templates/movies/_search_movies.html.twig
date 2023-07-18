@@ -1,0 +1,7 @@
+{% for movie in movies %}
+    <div class="card card-body">
+        <a href="{{ path('app_show_movie', {id: movie.id}) }}">
+            <span class="h6 text-muted">{{ movie.title }}</span>
+        </a>
+    </div>
+{% endfor %}

@@ -1,0 +1,95 @@
+@import "~bootstrap/scss/bootstrap";
+
+.relative {
+  position: relative;
+}
+
+header {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+
+  li {
+    list-style: none;
+
+    a {
+      font-size: 30px;
+    }
+
+    a:visited {
+      color: #0dcaf0;
+    }
+
+    a:hover {
+      color: hotpink;
+    }
+  }
+
+  .input-group {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      width: 400px;
+      height: 40px;
+      padding: 5px 20px;
+    }
+  }
+
+  .form-search-results-wrapper {
+    position: absolute;
+    top: -5px;
+    width: 400px;
+  }
+}
+
+.main {
+  width: 1200px;
+  margin: 0 auto;
+
+  .video-container {
+    margin-bottom: 40px;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: row;
+
+    img {
+      width: 250px;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .media-body {
+      margin-left: 60px;
+
+
+    }
+
+    .rating-container {
+      position: relative;
+      right: 20px;
+      top: 10px
+    }
+
+    .text-muted {
+      margin-top: 10px;
+      top: 10px
+    }
+  }
+
+  .btn-container {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    color: #0dcaf0;
+  }
+
+  .rating-color {
+    color: #0dcaf0;
+  }
+}
+
